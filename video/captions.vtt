@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00.000 --> 00:07.000
+Hybrid Agent Tutor: chat plus tool orchestration for learning.
+
+00:07.000 --> 00:15.000
+We’ll run a mock API and the frontend for a fast, reliable demo.
+
+00:15.000 --> 00:30.000
+The sidebar configures the session and exposes orchestration shortcuts.
+
+00:30.000 --> 00:45.000
+Type a request for notes; the app extracts intent and shows a trace.
+
+00:45.000 --> 01:05.000
+Run Note Maker to generate normalized study notes in the chat.
+
+01:05.000 --> 01:25.000
+Switch to Flashcard Generator for concise Q&A pairs.
+
+01:25.000 --> 01:40.000
+Toggle Hidden Trace to reveal the step-by-step reasoning.
+
+01:40.000 --> 01:55.000
+Errors surface clearly with a banner and status label.
+
+01:55.000 --> 02:10.000
+Responses follow predictable schemas, keeping the UI resilient.
+
+02:10.000 --> 02:20.000
+That’s it—thanks for watching.

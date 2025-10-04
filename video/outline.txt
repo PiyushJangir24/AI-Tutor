@@ -1,0 +1,32 @@
+Video: Autonomous AI Tutor (Frontend) — 4–6 min walkthrough
+
+Goal
+- Show what the app does, how to run it locally with a mock API, and the core flows: extracting intent, orchestrating tools, and viewing hidden reasoning trace.
+
+Audience
+- Reviewers and teammates evaluating the "Hybrid Agent Tutor" UI and flow.
+
+Chapters
+1) Title & context (10s)
+   - Name and one-liner: Hybrid Agent Tutor – chat + tool orchestration UI.
+2) Local setup (25s)
+   - Two terminals: run mock API (port 8000) and Vite dev server (5173).
+3) UI tour (45s)
+   - Sidebar: Session badge, teaching style, emotional state, mastery level, Analyze Context.
+   - Orchestration panel: Note Maker and Flashcard Generator buttons.
+   - Main: Chat log, input box, Hidden Trace toggle, Error banner area.
+4) Extract intent from message (60s)
+   - Type a message: "Please make notes about the solar system."
+   - Show assistant note with inferred intent/tool; enable Hidden Trace to reveal steps.
+5) Orchestrate: Note Maker (45s)
+   - Click Note Maker; show normalized text in chat; briefly mention API normalization.
+6) Orchestrate: Flashcards (45s)
+   - Click Flashcard Generator; show cards; toggle Hidden Trace for steps.
+7) Error handling (optional, 20s)
+   - Kill mock API briefly to trigger error banner; restart.
+8) Wrap-up (10s)
+   - Recap: chat, extraction, orchestration, trace, predictable schemas.
+
+On-screen aids
+- Use video/slides.html for title/section bumpers.
+- Include captions from video/captions.vtt.

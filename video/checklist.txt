@@ -1,0 +1,34 @@
+Recording Checklist — Hybrid Agent Tutor
+
+Prereqs
+- Node 18+
+- npm installed
+- Chrome/Chromium for the demo
+
+Start services (two terminals)
+- Terminal A:
+  cd frontend
+  npm install  # first time only
+  npm run mock:api
+- Terminal B:
+  cd frontend
+  npm run dev
+
+Browser
+- Open http://localhost:5173
+- Keep http://localhost:8000 open in a tab to confirm mock API is up
+
+Scenes
+- Title card: open video/slides.html and record the first slide
+- UI tour: slowly pan through sidebar and main area
+- Extraction: type a message asking for notes; toggle Hidden Trace
+- Orchestration: click Note Maker, then Flashcard Generator
+- Optional error: stop mock API, trigger an action, observe error banner, restart
+
+Capture settings
+- 1080p, 30 fps, 150% UI zoom if text is small
+- Mic on, noise suppression, record system audio if desired
+
+Delivery
+- Attach captions from video/captions.vtt in your editor
+- Export MP4 (H.264), ~8 Mbps bitrate
