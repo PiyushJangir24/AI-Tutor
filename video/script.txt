@@ -1,0 +1,28 @@
+Autonomous AI Tutor — Video Script (~5 minutes)
+
+00:00 — Title
+Hi, this is a quick walkthrough of the Hybrid Agent Tutor interface. It combines chat with structured tool orchestration to produce normalized outputs like notes and flashcards.
+
+00:15 — Local setup
+I have two terminals: one running a mock API on port 8000, and another running the frontend on port 5173. This mock server returns deterministic responses, so the demo is fast and reliable.
+
+00:30 — UI tour
+On the left, the Session panel shows a short session ID and lets me adjust teaching style, emotional state, and mastery level. The Orchestration panel below exposes tool shortcuts: Note Maker and Flashcard Generator.
+
+00:55 — Chat and extraction
+I’ll type: "Please make notes about the solar system." After sending, the app calls /extract. The UI appends a short assistant note with the inferred intent and tool. I’ll toggle Hidden Trace to reveal the reasoning steps used by the extractor.
+
+01:30 — Orchestrate: Note Maker
+Now I click Run Note Maker. The UI calls /orchestrate with the chosen tool. You can see normalized output in the chat — a title, concise lines, and items that could populate other components.
+
+02:15 — Orchestrate: Flashcards
+I’ll switch to Flashcard Generator. The response provides a set of question–answer pairs, again normalized. With Hidden Trace on, the app shows the step-by-step path the system took.
+
+03:00 — Error handling (optional)
+If I stop the mock server and try an action, the UI surfaces an error banner with a clear status label and message. I’ll restart the server to continue.
+
+03:25 — Why normalized schemas
+Both endpoints validate requests and return consistently shaped data. This keeps the UI resilient and decoupled from backend implementations.
+
+04:00 — Wrap-up
+We explored chat-driven extraction, tool orchestration, and hidden trace inspection in a lightweight local setup. Links to assets and commands are in the video folder. Thanks for watching.
