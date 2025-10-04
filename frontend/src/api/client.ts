@@ -7,7 +7,8 @@ import {
   OrchestrationResponseSchema
 } from './types';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+// Read at runtime from globalThis for compatibility with SSR/test builds
+const API_BASE_URL = (globalThis as any)?.VITE_API_BASE_URL || (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_API_BASE_URL) || 'http://localhost:8000';
 
 export class ApiClient {
   private readonly baseUrl: string;
